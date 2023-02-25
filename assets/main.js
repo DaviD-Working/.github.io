@@ -9,13 +9,13 @@ const refresh = document.getElementById('refresh');
 
 const currentYear = new Date().getFullYear();
 
-const birthday = new Date(`Apr 10 ${currentYear} 00:00:00`);
+const birthday = new Date(`Feb 24 ${currentYear} 00:00:00`);
 
 const today = new Date();
 const currentDateTime = new Date(`${today.getMonth()} ${today.getDate()} ${currentYear}`);
 
 //JavaScript Ternary Operator
-const age = currentDateTime < birthday ? currentYear - 1999 - 1 : currentYear - 1999;
+const age = currentDateTime < birthday ? currentYear - 2002 - 1 : currentYear - 2002;
 
 // Set background year
 dateyear.innerText = currentYear;
@@ -33,7 +33,7 @@ function updateCountdown() {
   const now = new Date();
 
   //If birthday pass out
-  const nextBirthday = new Date(`Apr 10 ${currentYear + 1} 00:00:00`)
+  const nextBirthday = new Date(`Feb 24 ${currentYear + 1} 00:00:00`)
   
   // JavaScript Ternary Operator 
   const timeSpan = (birthday < now) ? nextBirthday - now : birthday - now;
@@ -48,7 +48,7 @@ function updateCountdown() {
    const April = now.getMonth() === birthday.getMonth() && now.getDate() === birthday.getDate()
 
   if (April) {
-    console.log('Happy Birthday Sushil Sharma')
+    console.log('Happy Birthday Hiranmoy Sarkar')
     message.innerHTML = '<br> Guys and Gals, It gives me great pleasure to notify you that today is my birthday.<br>Happy Birthday!! Hope I had a nice Birthday Bash!!'
     countdown.style.display = "none"
     birthdayTime.style.display = "none"
