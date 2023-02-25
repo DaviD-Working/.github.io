@@ -38,7 +38,7 @@ function updateCountdown() {
   // JavaScript Ternary Operator 
   const timeSpan = (birthday < now) ? nextBirthday - now : birthday - now;
   const nextAge =  (birthday < now) ? age+1 : age;
-
+// Lol
 
   const day = Math.floor(timeSpan / d);
   const hour = Math.floor((timeSpan % d) / h);
